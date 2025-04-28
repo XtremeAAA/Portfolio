@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Achint Singh | Coding & Marketing Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Achint Singh</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#coding">Coding</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero fade-in">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hello, I'm <span class="highlight">Achint Singh</span></h1>
+                    <h2>Coder & Marketer</h2>
+                    <p>Building digital solutions and growing brands</p>
+                </div>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-btn red"></span>
+                            <span class="terminal-btn yellow"></span>
+                            <span class="terminal-btn green"></span>
+                        </div>
+                        <span class="terminal-title">bash</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> npm start creativity</p>
+                        <p><span class="prompt">$</span> git push innovation</p>
+                        <p><span class="prompt">$</span> // TODO: Change the world</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coding Projects -->
+        <section id="coding" class="section fade-up">
+            <div class="container">
+                <h2 class="section-title"><span class="brackets">{</span> Coding Projects <span class="brackets">}</span></h2>
+                <div class="projects-slider">
+                    <div class="slider-container">
+                        <!-- Slides will be added dynamically via JavaScript -->
+                    </div>
+                    <div class="slider-nav">
+                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing Projects -->
+        <section id="marketing" class="section fade-up">
+            <div class="container">
+                <h2 class="section-title"><span class="brackets">{</span> Marketing Work <span class="brackets">}</span></h2>
+                <div class="marketing-grid">
+                    <!-- Marketing projects will be added dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section fade-up">
+            <div class="container">
+                <h2 class="section-title"><span class="brackets">{</span> About Me <span class="brackets">}</span></h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <!-- You can fill this in yourself -->
+                        <p>Hello! I'm a passionate coder and marketer with experience in...</p>
+                        <p>My skills include...</p>
+                        <p>When I'm not coding or working on marketing campaigns, I enjoy...</p>
+                    </div>
+                    <div class="skills-chart">
+                        <div class="skill">
+                            <label>HTML/CSS</label>
+                            <div class="skill-bar"><span class="skill-level html"></span></div>
+                        </div>
+                        <div class="skill">
+                            <label>JavaScript</label>
+                            <div class="skill-bar"><span class="skill-level js"></span></div>
+                        </div>
+                        <div class="skill">
+                            <label>Digital Marketing</label>
+                            <div class="skill-bar"><span class="skill-level marketing"></span></div>
+                        </div>
+                        <div class="skill">
+                            <label>Social Media</label>
+                            <div class="skill-bar"><span class="skill-level social"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">Project Title</h2>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="Project Screenshot">
+                </div>
+                <div class="modal-details">
+                    <p id="modalDescription">Detailed project description goes here...</p>
+                    <div class="modal-links">
+                        <a id="modalLink" href="#" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer fade-up">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Achint Singh</h3>
+                    <p>Coder & Marketer creating digital solutions</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/achint-singh-163389311/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/XtremeAAA" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="mailto:achintsingh777@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Achint Singh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
