@@ -19,12 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const codingProjects = [
         {
             title: "Rock Paper Scissors Lizard Spock (RPSLS)",
-            description: "A simple game of RPSLC, built with C and C++ with twists",
+            description: "A simple game of RPSLS, built with C and C++ with twists",
             image: "Project Images/RPSLS.png",
             details: "This project has three separate parts to it. " +
-                    "The first part is a simple game of RPSLC, built with C and C++. " +
-                    "The second part is a simple game of RPS however with 3, built with C and C++. " +
-                    "The third part is a simple game of RPSLC, built with C and C++.",
+                    "The first part is a simple game of RPSLS. " +
+                    "The second part is a simple game of RPS however with 4 natural elements. " +
+                    "The third part is RPSLS, however rather than manually entering the wins and losses, " +
+                    "the program will automatically calculate the wins and losses based of a mathematical formula." +,
             link: "https://github.com/XtremeAAA/RPSLS-game"
         },
         {
