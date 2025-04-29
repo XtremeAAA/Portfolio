@@ -232,6 +232,8 @@ nav ul li a:hover {
 
 .slide-image {
   height: 200px;
+  width: 100%;
+  object-fit: cover;
   background-size: cover;
   background-position: center;
 }

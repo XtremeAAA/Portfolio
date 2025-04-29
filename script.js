@@ -20,9 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: "Rock Paper Scissors Lizard Spock (RPSLC)",
             description: "A simple game of RPSLC, built with C and C++ with twists",
-            image: "https://via.placeholder.com/600x400?text=Project+Alpha",
-            details: "This project was built to solve X problem using Y technologies. It features A, B, and C functionality.",
-            link: "https://github.com/yourusername/project-alpha"
+            image: "Project Images/RPSLS.png",
+            details: "This project has three separate parts to it. " +
+                    "The first part is a simple game of RPSLC, built with C and C++. " +
+                    "The second part is a simple game of RPS however with 3, built with C and C++. " +
+                    "The third part is a simple game of RPSLC, built with C and C++.",
+            link: "https://github.com/XtremeAAA/RPSLS-game"
         },
         {
             title: "Project Beta",
@@ -33,13 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: "Project Gamma",
-            description: "Data visualization dashboard",
-            image: "https://via.placeholder.com/600x400?text=Project+Gamma",
-            details: "Interactive dashboard displaying real-time data from various sources using D3.js and Python backend.",
-            link: "https://github.com/yourusername/project-gamma"
-        },
-        {
-            title: "Project Charlie",
             description: "Data visualization dashboard",
             image: "https://via.placeholder.com/600x400?text=Project+Gamma",
             details: "Interactive dashboard displaying real-time data from various sources using D3.js and Python backend.",
