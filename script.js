@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Coding projects data
     const codingProjects = [
         {
-            title: "Rock Paper Scissors Lizard Spock (RPSLC)",
+            title: "Rock Paper Scissors Lizard Spock (RPSLS)",
             description: "A simple game of RPSLC, built with C and C++ with twists",
             image: "Project Images/RPSLS.png",
             details: "This project has three separate parts to it. " +
