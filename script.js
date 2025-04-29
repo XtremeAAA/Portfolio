@@ -97,6 +97,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     codingProjects.forEach((project, index) => {
         const slide = document.createElement('div');
+        //console.log(index);
+        
         slide.className = 'slide';
         slide.innerHTML = `
             <div class="slide-content">
@@ -149,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains('view-project')) {
             const index = e.target.getAttribute('data-index');
-            const project = codingProjects[index];
+            const project = codingProjects[currentSlideIndex];
             
             modalTitle.textContent = project.title;
             modalImage.src = project.image;
@@ -203,6 +205,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function nextSlide() {
         let nextIndex = currentSlideIndex + 1;
+        console.log(currentSlideIndex);
+        index = nextIndex;
         if (nextIndex >= slides.length) nextIndex = 0;
         
         // Mark current slide as prev for transition
@@ -213,6 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function prevSlide() {
         let prevIndex = currentSlideIndex - 1;
+        //console.log(currentSlideIndex);
         if (prevIndex < 0) prevIndex = slides.length - 1;
         
         // Mark current slide as prev for transition
@@ -252,19 +257,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Smooth scrolling for navigation
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
+    
 });
