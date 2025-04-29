@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "The first part is a simple game of RPSLS. " +
                     "The second part is a simple game of RPS however with 4 natural elements. " +
                     "The third part is RPSLS, however rather than manually entering the wins and losses, " +
-                    "the program will automatically calculate the wins and losses based of a mathematical formula." +,
+                    "the program will automatically calculate the wins and losses based of a mathematical formula.",
             link: "https://github.com/XtremeAAA/RPSLS-game"
         },
         {
