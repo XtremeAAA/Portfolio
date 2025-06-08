@@ -3,155 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Achint Singh | Coding & Marketing Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Achint Singh | Marketing & Software Engineering</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <!-- Header & Navigation -->
+    <header>
         <div class="container">
-            <h1 class="logo">Achint Singh</h1>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#coding">Coding</a></li>
-                    <li><a href="#marketing">Marketing</a></li>
-                    <li><a href="#about">About</a></li>
+                <a href="#" class="logo">Achint Singh</a>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero fade-in">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Hello, I'm <span class="highlight">Achint Singh</span></h1>
-                    <h2>Coder & Marketer</h2>
-                    <p>Building digital solutions and growing brands</p>
-                </div>
-                <div class="terminal-window">
-                    <div class="terminal-header">
-                        <div class="terminal-buttons">
-                            <span class="terminal-btn red"></span>
-                            <span class="terminal-btn yellow"></span>
-                            <span class="terminal-btn green"></span>
-                        </div>
-                        <span class="terminal-title">bash</span>
-                    </div>
-                    <div class="terminal-body">
-                        <p><span class="prompt">$</span> npm start creativity</p>
-                        <p><span class="prompt">$</span> git push innovation</p>
-                        <p><span class="prompt">$</span> // TODO: Change the world</p>
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Achint Singh<br><span>Marketing & Software Engineer</span></h1>
+                <p>I combine marketing expertise with technical skills to create impactful digital solutions.
+                    Currently studying Software Engineering to bridge the gap between business strategy and technology.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Coding Projects -->
-        <section id="coding" class="section fade-up">
-            <div class="container">
-                <h2 class="section-title"><span class="brackets">{</span> Coding Projects <span class="brackets">}</span></h2>
-                <div class="projects-slider">
-                    <div class="slider-container">
-                        <!-- Slides will be added dynamically via JavaScript -->
-                    </div>
-                    <div class="slider-nav">
-                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
-                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
             </div>
-        </section>
-
-        <!-- Marketing Projects -->
-        <section id="marketing" class="section fade-up">
-            <div class="container">
-                <h2 class="section-title"><span class="brackets">{</span> Marketing Work <span class="brackets">}</span></h2>
-                <div class="marketing-grid">
-                    <!-- Marketing projects will be added dynamically -->
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section fade-up">
-            <div class="container">
-                <h2 class="section-title"><span class="brackets">{</span> About Me <span class="brackets">}</span></h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <!-- You can fill this in yourself -->
-                        <p>Hello! I'm a passionate coder and marketer with experience in...</p>
-                        <p>My skills include...</p>
-                        <p>When I'm not coding or working on marketing campaigns, I enjoy...</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fa-solid fa-lightbulb"></i>
                     </div>
-                    <div class="skills-chart">
-                        <div class="skill">
-                            <label>HTML/CSS</label>
-                            <div class="skill-bar"><span class="skill-level html"></span></div>
+                    <div class="project-info">
+                        <h3>Rock Paper Scissors Lizard Spok (RPSLS)</h3>
+                        <p>A terminal based game of RPSLS with 3 different variations, each variation has its own modifications
+                            with the last variation being solved using a mathamatical appraoch to determine the winner.</p>
+                        <div class="tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Math</span>
                         </div>
-                        <div class="skill">
-                            <label>JavaScript</label>
-                            <div class="skill-bar"><span class="skill-level js"></span></div>
-                        </div>
-                        <div class="skill">
-                            <label>Digital Marketing</label>
-                            <div class="skill-bar"><span class="skill-level marketing"></span></div>
-                        </div>
-                        <div class="skill">
-                            <label>Social Media</label>
-                            <div class="skill-bar"><span class="skill-level social"></span></div>
-                        </div>
+                        <a href="https://github.com/XtremeAAA/RPSLS-game" class="btn">View Project</a>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Project Modal -->
-    <div class="modal" id="projectModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2 id="modalTitle">Project Title</h2>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <img id="modalImage" src="" alt="Project Screenshot">
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fa-solid fa-cards-blank"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Marketing Automation Tool</h3>
+                        <p>An automated marketing platform that integrates email campaigns, social media, and analytics.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
                 </div>
-                <div class="modal-details">
-                    <p id="modalDescription">Detailed project description goes here...</p>
-                    <div class="modal-links">
-                        <a id="modalLink" href="#" target="_blank" class="btn">View GitHub</a>
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness App UI/UX</h3>
+                        <p>A mobile application designed to help users track workouts and nutrition with a focus on user experience.</p>
+                        <div class="tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">React Native</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Marketing Experience Section -->
+    <section id="experience" style="background-color: var(--darker-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Marketing Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Digital Marketing Manager</h3>
+                        <h4>TechGrowth Inc. | 2020 - Present</h4>
+                        <p>Lead digital marketing strategies for SaaS products, resulting in 150% increase in qualified leads. Manage a team of 5 marketing specialists.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Marketing Strategist</h3>
+                        <h4>Global Solutions Ltd. | 2018 - 2020</h4>
+                        <p>Developed and executed marketing campaigns across multiple channels, increasing brand awareness by 80% in target markets.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Content Marketing Specialist</h3>
+                        <h4>Innovate Marketing Agency | 2016 - 2018</h4>
+                        <p>Created content strategies for B2B clients, resulting in 60% increase in organic traffic and 45% growth in conversion rates.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Marketing Coordinator</h3>
+                        <h4>StartUp Ventures | 2014 - 2016</h4>
+                        <p>Managed social media channels and email marketing campaigns for early-stage tech startups.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certificates</h2>
+            </div>
+            <div class="certificates-container">
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                        <h3>Full Stack Development</h3>
+                    </div>
+                    <div class="certificate-body">
+                        <p>Advanced certification in modern web development technologies including React, Node.js, and databases.</p>
+                        <p><strong>Issued:</strong> MIT xPRO | 2023</p>
+                    </div>
+                    <div class="certificate-footer">
+                        <a href="#" class="btn">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                        <h3>Digital Marketing</h3>
+                    </div>
+                    <div class="certificate-body">
+                        <p>Comprehensive certification covering SEO, SEM, social media marketing, and analytics.</p>
+                        <p><strong>Issued:</strong> Google | 2022</p>
+                    </div>
+                    <div class="certificate-footer">
+                        <a href="#" class="btn">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                        <h3>Data Science</h3>
+                    </div>
+                    <div class="certificate-body">
+                        <p>Specialization in data analysis, machine learning, and data visualization techniques.</p>
+                        <p><strong>Issued:</strong> IBM | 2021</p>
+                    </div>
+                    <div class="certificate-footer">
+                        <a href="#" class="btn">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: var(--darker-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <div class="terminal-btn btn-red"></div>
+                        <div class="terminal-btn btn-yellow"></div>
+                        <div class="terminal-btn btn-green"></div>
+                    </div>
+                    <div class="terminal-title">contact@alexmorgan.dev</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-prompt">
+                        <span>visitor@portfolio:~$</span>
+                        <input type="text" class="terminal-input" placeholder="Type 'contact' to send a message..." id="terminalCommand">
+                    </div>
+                    <div id="contactForm" style="display: none;">
+                        <form id="messageForm">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="terminal-btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer id="contact" class="footer fade-up">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>Achint Singh</h3>
-                    <p>Coder & Marketer creating digital solutions</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Connect</h3>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/achint-singh-163389311/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a href="https://github.com/XtremeAAA" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                        <li><a href="mailto:achintsingh777@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-                    </ul>
-                </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Achint Singh. All rights reserved.</p>
-            </div>
+            <p class="footer-text">&copy; 2023 Alex Morgan. All rights reserved.</p>
+            <p class="footer-text">Combining Marketing Expertise with Software Engineering</p>
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
