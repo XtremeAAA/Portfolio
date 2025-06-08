@@ -203,7 +203,8 @@
                         <input type="text" class="terminal-input" placeholder="Type 'contact' to send a message..." id="terminalCommand">
                     </div>
                     <div id="contactForm" style="display: none;">
-                        <form id="messageForm" action="https://formspree.io/f/service_z6eq1oc" method="POST">
+                        <form id="messageForm" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="32bf073f-b97a-42dd-945e-215f0b32d17d">
                             <div class="form-group">
                                 <label for="name">Name:</label>
                                 <input type="text" id="name" name="name" required>
