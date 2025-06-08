@@ -21,24 +21,37 @@ terminalCommand.addEventListener('keyup', (e) => {
     }
 });
 
-// Form submission
+// Form submission using Formspree
 const messageForm = document.getElementById('messageForm');
 
-messageForm.addEventListener('submit', (e) => {
+messageForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
     // Get form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
-    
-    // In a real implementation, you would send this data to a server
-    // For this demo, we'll just show an alert
-    alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon.`);
-    
-    // Reset form
-    messageForm.reset();
-    contactForm.style.display = 'none';
+
+    // Send form data to Formspree
+    try {
+        const response = await fetch('https://formspree.io/f/service_z6eq1oc', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: new FormData(messageForm)
+        });
+
+        if (response.ok) {
+            alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon.`);
+            messageForm.reset();
+            contactForm.style.display = 'none';
+        } else {
+            alert('Oops! Something went wrong. Please try again later.');
+        }
+    } catch (error) {
+        alert('Oops! Something went wrong. Please try again later.');
+    }
 });
 
 // Smooth scrolling for navigation links
