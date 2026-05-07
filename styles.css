@@ -239,6 +239,15 @@ section {
     font-size: 3rem;
 }
 
+/* Ensure SVGs and images fit the project image container */
+.project-img img {
+    display: block;
+    width: auto;
+    height: 90%;
+    max-width: 90%;
+    object-fit: contain;
+}
+
 .project-info {
     padding: 24px;
 }
